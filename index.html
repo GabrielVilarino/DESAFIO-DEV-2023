@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Desafio Ignis</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <section class="topo">
+            <div class="center">
+                <h2>TORNEIO IGNIS</h2>
+                <div class="clear"></div>
+            </div><!--Center-->
+        </section><!--Topo-->
+        <section class="times">
+            <div class="center">
+                <h2>Selecione os times para o torneio:</h2>
+                        <textarea type="text" class="textarea" id="clubes" required></textarea>
+                        <button onclick=addTimes() id="submitbtn">Enviar</button>
+                <div class="clear"></div>
+                <div class="times-selecionados">
+                    <h2>Times Selecionados:<br></h2>
+                    <p id="selecionados"></p>
+                </div>
+            </div>
+        </section>   
+        <script src="script.js"></script> 
+    </body>
+</html>

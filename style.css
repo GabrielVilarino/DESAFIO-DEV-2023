@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear{clear: both;}
+
+section.topo{
+    background-color: rgb(18, 110, 81);
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+section.topo h2{
+    color: white;
+    float: left;
+}
+
+section.times h2{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+section.times textarea{
+    width: 350px;
+    height: 150px;
+    resize: none;
+}
