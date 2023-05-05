@@ -59,7 +59,22 @@ console.table(times);
     coluna2.innerHTML = times[4][1]
 
     if(times[0][1] == times[1][1]){
+        var p1 = document.querySelector("#p1")
+        var p2 = document.querySelector("#p2")
+        p1.innerHTML = "(RODADA DUPLA)"
+        p2.innerHTML = "(RODADA DUPLA)"
+    }else if(times[0][1] == times[4][1]){
+        var p1 = document.querySelector("#p1")
+        var p3 = document.querySelector("#p3")
+        p1.innerHTML = "(RODADA DUPLA)"
+        p3.innerHTML = "(RODADA DUPLA)"
+    }
 
+    if(times[1][1] == times[4][1]){
+        var p2 = document.querySelector("#p2")
+        var p3 = document.querySelector("#p3")
+        p2.innerHTML = "(RODADA DUPLA)"
+        p3.innerHTML = "(RODADA DUPLA)"
     }
 
     //Rodada 2
@@ -91,6 +106,25 @@ console.table(times);
     coluna3 = linha3.insertCell(2)
     coluna3.innerHTML = times[1][1]
 
+    if(times[0][1] == times[2][1]){
+        var p4 = document.querySelector("#p4")
+        var p5 = document.querySelector("#p5")
+        p4.innerHTML = "(RODADA DUPLA)"
+        p5.innerHTML = "(RODADA DUPLA)"
+    }else if(times[0][1] == times[1][1]){
+        var p4 = document.querySelector("#p4")
+        var p6 = document.querySelector("#p6")
+        p4.innerHTML = "(RODADA DUPLA)"
+        p6.innerHTML = "(RODADA DUPLA)"
+    }
+
+    if(times[2][1] == times[1][1]){
+        var p5 = document.querySelector("#p4")
+        var p6 = document.querySelector("#p6")
+        p4.innerHTML = "(RODADA DUPLA)"
+        p6.innerHTML = "(RODADA DUPLA)"
+    }
+
     //Returno Rodada 1
     var divTable4 = document.querySelector("#tabela4")
     var table4 = document.createElement("table")
@@ -120,6 +154,25 @@ console.table(times);
     coluna4 = linha4.insertCell(2)
     coluna4.innerHTML = times[5][1]
 
+    if(times[2][1] == times[3][1]){
+        var p7 = document.querySelector("#p7")
+        var p8 = document.querySelector("#p8")
+        p7.innerHTML = "(RODADA DUPLA)"
+        p8.innerHTML = "(RODADA DUPLA)"
+    }else if(times[2][1] == times[5][1]){
+        var p7 = document.querySelector("#p7")
+        var p9 = document.querySelector("#p9")
+        p7.innerHTML = "(RODADA DUPLA)"
+        p9.innerHTML = "(RODADA DUPLA)"
+    }
+
+    if(times[2][1] == times[5][1]){
+        var p8 = document.querySelector("#p8")
+        var p9 = document.querySelector("#p9")
+        p8.innerHTML = "(RODADA DUPLA)"
+        p9.innerHTML = "(RODADA DUPLA)"
+    }
+
      //Returno Rodada 2
      var divTable5 = document.querySelector("#tabela5")
      var table5 = document.createElement("table")
@@ -148,4 +201,30 @@ console.table(times);
      coluna5.innerHTML = times[1][0]
      coluna5 = linha5.insertCell(2)
      coluna5.innerHTML = times[4][1]
+
+     if(times[3][1] == times[5][1]){
+        var p10 = document.querySelector("#p10")
+        var p11 = document.querySelector("#p11")
+        p10.innerHTML = "(RODADA DUPLA)"
+        p11.innerHTML = "(RODADA DUPLA)"
+    }else if(times[3][1] == times[4][1]){
+        var p10 = document.querySelector("#p10")
+        var p12 = document.querySelector("#p12")
+        p10.innerHTML = "(RODADA DUPLA)"
+        p12.innerHTML = "(RODADA DUPLA)"
+    }
+
+    if(times[5][1] == times[4][1]){
+        var p11 = document.querySelector("#p11")
+        var p12 = document.querySelector("#p12")
+        p11.innerHTML = "(RODADA DUPLA)"
+        p12.innerHTML = "(RODADA DUPLA)"
+    }
+
+    if(times[2][1] == times[5][1]){
+        var p8 = document.querySelector("#p8")
+        var p9 = document.querySelector("#p9")
+        p8.innerHTML = "(RODADA DUPLA)"
+        p9.innerHTML = "(RODADA DUPLA)"
+    }
 }
