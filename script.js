@@ -29,4 +29,123 @@ console.table(times);
         
     }
 }
+//Rodada 1
+    var divTable2 = document.querySelector("#tabela2")
+    var table2 = document.createElement("table")
+    divTable2.appendChild(table2)
+
+    var linha2 = table2.insertRow(0);
+    var coluna2 = linha2.insertCell(0)
+    coluna2.innerHTML = times[0][0]
+    coluna2 = linha2.insertCell(1)
+    coluna2.innerHTML = times[2][0]
+    coluna2 = linha2.insertCell(2)
+    coluna2.innerHTML = times[0][1]
+
+    linha2 = table2.insertRow(1);
+    coluna2 = linha2.insertCell(0)
+    coluna2.innerHTML = times[1][0]
+    coluna2 = linha2.insertCell(1)
+    coluna2.innerHTML = times[3][0]
+    coluna2 = linha2.insertCell(2)
+    coluna2.innerHTML = times[1][1]
+
+    linha2 = table2.insertRow(2);
+    coluna2 = linha2.insertCell(0)
+    coluna2.innerHTML = times[4][0]
+    coluna2 = linha2.insertCell(1)
+    coluna2.innerHTML = times[5][0]
+    coluna2 = linha2.insertCell(2)
+    coluna2.innerHTML = times[4][1]
+
+    if(times[0][1] == times[1][1]){
+
+    }
+
+    //Rodada 2
+    var divTable3 = document.querySelector("#tabela3")
+    var table3 = document.createElement("table")
+    divTable3.appendChild(table3)
+
+    var linha3 = table3.insertRow(0);
+    var coluna3 = linha3.insertCell(0)
+    coluna3.innerHTML = times[0][0]
+    coluna3 = linha3.insertCell(1)
+    coluna3.innerHTML = times[3][0]
+    coluna3 = linha3.insertCell(2)
+    coluna3.innerHTML = times[0][1]
+
+    linha3 = table3.insertRow(1);
+    coluna3 = linha3.insertCell(0)
+    coluna3.innerHTML = times[2][0]
+    coluna3 = linha3.insertCell(1)
+    coluna3.innerHTML = times[5][0]
+    coluna3 = linha3.insertCell(2)
+    coluna3.innerHTML = times[2][1]
+
+    linha3 = table3.insertRow(2);
+    coluna3 = linha3.insertCell(0)
+    coluna3.innerHTML = times[1][0]
+    coluna3 = linha3.insertCell(1)
+    coluna3.innerHTML = times[4][0]
+    coluna3 = linha3.insertCell(2)
+    coluna3.innerHTML = times[1][1]
+
+    //Returno Rodada 1
+    var divTable4 = document.querySelector("#tabela4")
+    var table4 = document.createElement("table")
+    divTable4.appendChild(table4)
+
+    var linha4 = table4.insertRow(0);
+    var coluna4 = linha4.insertCell(0)
+    coluna4.innerHTML = times[2][0]
+    coluna4 = linha4.insertCell(1)
+    coluna4.innerHTML = times[0][0]
+    coluna4 = linha4.insertCell(2)
+    coluna4.innerHTML = times[2][1]
+
+    linha4 = table4.insertRow(1);
+    coluna4 = linha4.insertCell(0)
+    coluna4.innerHTML = times[3][0]
+    coluna4 = linha4.insertCell(1)
+    coluna4.innerHTML = times[1][0]
+    coluna4 = linha4.insertCell(2)
+    coluna4.innerHTML = times[3][1]
+
+    linha4 = table4.insertRow(2);
+    coluna4 = linha4.insertCell(0)
+    coluna4.innerHTML = times[5][0]
+    coluna4 = linha4.insertCell(1)
+    coluna4.innerHTML = times[4][0]
+    coluna4 = linha4.insertCell(2)
+    coluna4.innerHTML = times[5][1]
+
+     //Returno Rodada 2
+     var divTable5 = document.querySelector("#tabela5")
+     var table5 = document.createElement("table")
+     divTable5.appendChild(table5)
+ 
+     var linha5 = table5.insertRow(0);
+     var coluna5 = linha5.insertCell(0)
+     coluna5.innerHTML = times[3][0]
+     coluna5 = linha5.insertCell(1)
+     coluna5.innerHTML = times[0][0]
+     coluna5 = linha5.insertCell(2)
+     coluna5.innerHTML = times[3][1]
+ 
+     linha5 = table5.insertRow(1);
+     coluna5 = linha5.insertCell(0)
+     coluna5.innerHTML = times[5][0]
+     coluna5 = linha5.insertCell(1)
+     coluna5.innerHTML = times[2][0]
+     coluna5 = linha5.insertCell(2)
+     coluna5.innerHTML = times[5][1]
+ 
+     linha5 = table5.insertRow(2);
+     coluna5 = linha5.insertCell(0)
+     coluna5.innerHTML = times[4][0]
+     coluna5 = linha5.insertCell(1)
+     coluna5.innerHTML = times[1][0]
+     coluna5 = linha5.insertCell(2)
+     coluna5.innerHTML = times[4][1]
 }
