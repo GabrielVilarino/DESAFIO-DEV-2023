@@ -55,9 +55,27 @@ section.times textarea{
     
 }
 
+.returno-rodada2{
+    margin-bottom: 15px;
+}
+
 .returno-rodada2 p{
     position: relative;
     left: 290px;
     top: -65px;
     
+}
+
+.resultados-rodada1 h2{
+    margin-bottom: 20px;
+}
+
+.resultados-rodada2 h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.resultado-final h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

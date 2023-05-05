@@ -227,4 +227,105 @@ console.table(times);
         p8.innerHTML = "(RODADA DUPLA)"
         p9.innerHTML = "(RODADA DUPLA)"
     }
+
+    //Gerando Resultados
+
+    //Turno e Returno Rodada 1
+    var resultados = []
+    var pontos = []
+    for(var i = 0; i < times.length; i++){
+        resultados[i] = Math.floor(Math.random()*10)
+    }
+    for(var i = 0; i < times.length; i++){
+        resultados[i] += Math.floor(Math.random()*10)
+    }
+    for(var i = 0; i < times.length; i+=2){
+        if(resultados[i] < resultados[i+1]){
+            pontos[i+1] = 3
+            pontos[i] = 0
+        }else if(resultados[i] > resultados[i+1]){
+            pontos[i] = 3
+            pontos[i + 1] = 0
+        }else{
+            pontos[i] = 1
+            pontos[i+1] = 1
+        }
+    }
+
+    var p13 = document.querySelector("#p13")
+    p13.innerHTML = times[0][0] + ": " + pontos[0] + " pontos"
+
+    var p14 = document.querySelector("#p14")
+    p14.innerHTML = times[1][0] + ": " + pontos[1] + " pontos"
+
+    var p15 = document.querySelector("#p15")
+    p15.innerHTML = times[2][0] + ": " + pontos[2] + " pontos"
+
+    var p16 = document.querySelector("#p16")
+    p16.innerHTML = times[3][0] + ": " + pontos[3] + " pontos"
+
+    var p17 = document.querySelector("#p17")
+    p17.innerHTML = times[4][0] + ": " + pontos[4] + " pontos"
+
+    var p18 = document.querySelector("#p18")
+    p18.innerHTML = times[5][0] + ": " + pontos[5] + " pontos"
+
+    //Turno e Returno Rodada 2
+    for(var i = 0; i < times.length; i++){
+        resultados[i] = Math.floor(Math.random()*10)
+    }
+    for(var i = 0; i < times.length; i++){
+        resultados[i] += Math.floor(Math.random()*10)
+    }
+    for(var i = 0; i < times.length; i+=2){
+        if(resultados[i] < resultados[i+1]){
+            pontos[i+1] += 3
+            pontos[i] += 0
+        }else if(resultados[i] > resultados[i+1]){
+            pontos[i] += 3
+            pontos[i + 1] += 0
+        }else{
+            pontos[i] += 1
+            pontos[i+1] += 1
+        }
+    }
+
+    var p19 = document.querySelector("#p19")
+    p19.innerHTML = times[0][0] + ": " + pontos[0] + " pontos"
+
+    var p20 = document.querySelector("#p20")
+    p20.innerHTML = times[1][0] + ": " + pontos[1] + " pontos"
+
+    var p21 = document.querySelector("#p21")
+    p21.innerHTML = times[2][0] + ": " + pontos[2] + " pontos"
+
+    var p22 = document.querySelector("#p22")
+    p22.innerHTML = times[3][0] + ": " + pontos[3] + " pontos"
+
+    var p23 = document.querySelector("#p23")
+    p23.innerHTML = times[4][0] + ": " + pontos[4] + " pontos"
+
+    var p24 = document.querySelector("#p24")
+    p24.innerHTML = times[5][0] + ": " + pontos[5] + " pontos"
+
+
+    //Resultado Final
+    var p25 = document.querySelector("#p25")
+    p25.innerHTML = times[0][0] + ": " + pontos[0] + " pontos"
+
+    var p26 = document.querySelector("#p26")
+    p26.innerHTML = times[1][0] + ": " + pontos[1] + " pontos"
+
+    var p27 = document.querySelector("#p27")
+    p27.innerHTML = times[2][0] + ": " + pontos[2] + " pontos"
+
+    var p28 = document.querySelector("#p28")
+    p28.innerHTML = times[3][0] + ": " + pontos[3] + " pontos"
+
+    var p29 = document.querySelector("#p29")
+    p29.innerHTML = times[4][0] + ": " + pontos[4] + " pontos"
+
+    var p30 = document.querySelector("#p30")
+    p30.innerHTML = times[5][0] + ": " + pontos[5] + " pontos"
+
 }
